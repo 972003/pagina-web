@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de about</title>
+    <link rel="shortcut icon" href="img/iconos/icono.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.CSS">
+    <script>
+
+        window.onload = function () {
+            var mision = document.getElementById('mision');
+            mision.innerHTML ='Satisfacer con excelencia a los consumidores de bebidas.';
+            
+        }
+    </script>
+
+    <script src="" >
+
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="center">
+            <div id="logo">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="logotipo">
+                <span id="brand"><strong>Diseño web </strong> </span>
+
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html"> Inicio </a> </a> </li>
+                    <li><a href="blog.html"> Blog</a></li>
+                    <li><a href="contacto.html"> Contactos</a></li>
+                    <li><a href="galeria.html"> Galería </a></li>
+                    <li><a href="#"> Acerca de</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="slider">
+        <h1 onclick="alert('HOLA, esta es la primer prueba de js');" class="ejercicios">ejercicio javascript</h1>
+
+    </div>
+
+
+    <div class="centermain">
+        <main id="main">
+            Aqui estara la informacion general
+            <h1>Mision</h1>
+            <p id="mision"></p>
+            <button type="button" class="btn" onclick="vision()">Mostrar vision</button>
+            <h1 id="visionh1" style="display: none;">Vision</h1>
+            <p id="vision"></p>
+       
+        </main>
+
+        <div class="centermain">
+            <aside id="sidebar">
+                    <div class="sidebar-item">
+                        <h3>Bienvenido</h3>
+                    </div>
+                    <div class="sidebar-item">
+                        <h3>¿Que buscas?</h3>
+                        <form action="">
+                            <input type="text">
+                            <input class="btn" type="submit" value="Buscar" >
+                        </form>
+                    </div>
+            </aside>
+
+    <div class="clearfix">
+
+    </div>
+    
+
+    
+</body>
+
+
+
+</html>

@@ -1,0 +1,378 @@
+ 
+ 
+ /*le damos diseño al body, quitando margen y padding*/
+ body{
+    /*backround-color */
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    /*fuentes*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+/*le damos */
+header{
+    height: 120px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+.center{
+    width: 75%;
+    margin: 0px auto;
+
+}
+/*le damos diseño al logotipo y menudentro de hadear*/
+#logo{
+    width: 30%;
+    font-size: 24px;
+    float: left;
+    margin-top: 30px;
+}
+#logo img{
+    display: block;
+    float: left;
+    height: 60px;
+    margin-top: 5px;
+    margin-right: 1px;
+    margin-left: 40px;
+   /* animation: crecer infinite 2s linear;*/
+   /*animation: minimizar infinite 2s linear;*/
+   animation: girar infinite 2s linear;
+}
+
+@keyframes girar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes minimizar{
+    0%{transform: scale(1,1);}
+    20%{transform: scale(.8,.8);}
+    40%{transform: scale(.4,.4);}
+    80%{transform: scale(.1,.1);}
+   /* 100%{transform: scale(1,1);} */
+}
+
+@keyframes crecer {
+    0%{
+        transform: scale(-1,-1) ;
+    }
+    /*ancho*/
+    25%{
+        transform: 
+        rotate(180deg)
+        scale(-1,-1);
+    }
+    50%{
+        transform: scale(-1,-1);
+    }
+    100%{
+        transform: 
+        rotate(180deg)
+        scale(-1,-1) ;
+        
+    }
+}
+#brand{
+    font-size: 30px;
+    display: block;
+    float: right;
+    margin-top: 10px
+}
+#menu{
+    width: 70%;
+    float: right;
+    font-size: 16px;
+
+}
+#menu ul{
+    line-height: 80px;
+    width: 60%;
+    float: right;
+}
+#menu ul li{
+    display: inline-block;
+    list-style: none;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+#menu a{
+    text-decoration: none;
+    color: black;
+    transition: 300ms all;
+}
+#menu a:hover{
+    color: cyan;
+    font-size: 18px;
+}
+#menu a:active{
+   color: red;
+   font-size: 18px;
+
+}
+/*agregamos diseño de slider*/
+#slider{
+    width: 100%;
+    height: 180px;
+    color: white;
+    text-shadow: 1px 1px 5px #444;
+    background-color:  rgb(202, 108, 0);
+}
+#slider h1{
+    margin-top: 1px;
+    padding: 0px;
+    padding-top: 100px;
+    text-align: center;
+}
+#slider .ejercicios:hover{
+    cursor: pointer;
+    
+
+}
+/*diseño del slider pequeño*/
+.slider-small{
+    height: 130px;
+}
+.slider-small h1{
+    margin-top: 1px;
+    padding: 0px;
+    padding-top: 50px;
+    text-align: center;
+}
+/*diseño del contenido principal*/
+#main{
+    width: 69%;
+    float: left;
+    min-height:400px ;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}
+.centermain{
+  
+        width: 90%;
+        margin: 0px auto;
+        float: right;
+    
+
+}
+
+/*diseño de la galeria de imagenes*/
+
+.galeria li {
+    display: inline;
+    float: left;
+    width: 150px;
+    height: 150px;
+    padding: 3px;
+    margin: 5px;
+}
+.galeria li img{
+    border: 1px solid#ddd;
+    border-radius: 15px;
+    padding: 5px;
+   width: 100%;
+   height: 100%;
+
+}
+
+/* diseño de sidebar */
+#sidebar{
+    width: 29%;
+    float: right;
+    margin-top: 15px;
+    
+}
+
+/*clase*/
+.sidebar-item{
+    background: #a5a5a5;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+.btn{
+    display: block;
+    margin: 20px auto;
+    background: green;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    border: none;
+    max-width: 120px;
+    cursor:pointer
+
+}
+.btn:hover{
+    background: whitesmoke;
+
+}
+
+/*limpiar o espacio*/
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+.secondary{
+    width: 100%;
+    min-height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: white;
+    border-top: 1px solid #ccc;
+ 
+}
+.secondary h2{
+    text-align: center;
+    color:rgb(0, 252, 239);
+
+}
+.secondary p{
+    width: 80%;
+    margin: 30px auto;
+    font-size: 20px;
+    text-align: justify;
+}
+/*este es el diseño de la tabla dentro del contain*/
+.container{
+    width: 100%;
+    margin-top: 15px;
+    border-top:  1px solid #ccc;
+}
+
+.mytable{
+    margin: 0 auto;
+    width: 80%;
+    float: left;
+    border-collapse: collapse;
+    overflow: hidden;/*esconder barrita para subir y bajar*/
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+}
+.mytable th,.mytable td{
+    padding: 10px;
+   border:  1px solid #a5a5a5;
+
+}
+
+.mytable th{
+    background-color:white;
+    color : black;
+}
+.mytable td{
+    color:rgb(48, 3, 3);
+    background-color:rgb(235, 191, 126);
+    text-align: center;
+}
+.table-actions{
+    text-align: center;
+}
+
+.icono{
+    width: 20px;
+}
+.encabezado{
+    margin: 1px;
+    padding: 0px;
+    padding-top: 40px;
+    text-align: left;
+    color: rgb(110, 8, 8);
+    font-size: 22px;
+    
+    
+}
+/*diseño para el formulario*/
+
+.miformu{
+    width: 80%;
+    max-width: 400px;
+    margin: 0px auto;
+    border: 1px solid #ccc;
+    background-color: lightskyblue ;
+    padding: 15px;
+
+}
+.miformu label{
+    display: block;
+    text-align: left;
+    margin-bottom: 1px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.miformu .datos{
+    width: 100%;
+    max-width: 380px;
+    min-height: 20px;
+    border: 1px solid #ccc;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+
+
+
+.miformu textarea{
+    resize: none;
+}
+
+.miformu button{
+    display: block;
+    background-color: green;
+    font-weight: bold;
+    font-size: +1;
+    border: 0;
+    color: white;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px 45px;
+}
+.miformu button:hover{
+    background-color: white;
+    color: green;
+    cursor: pointer;
+}
+/*diseño de mapa de google*/
+.mapa{
+    margin-top: 60px;
+    margin-right: 10px;
+    margin-left: -40px;
+    width: 100%;
+    
+    
+}
+.framemapa{
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+footer{
+    width: 100%;
+    position: relative;
+    background-color: #c0bdbd;
+    height: 70px;
+    color: #444;
+    line-height: 70px;
+    bottom: 0;
+
+    /*display: block;*/
+    /*text-align: center;*/
+    
+}
+footer .center p{
+    margin-top: 0px;
+    display: inline;
+    padding-bottom: opx;
+}
